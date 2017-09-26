@@ -1,0 +1,53 @@
+* {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.main_content {
+  margin-top: 60px;
+}
+.main_content h1 {
+  font-size: 60px;
+  font-family: "Pacifico",sans-serif;
+}
+.main_content .btn {
+  border-radius: 30px;
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  margin: 5px;
+}
+.main_content .icon {
+  width: 15px;
+  height: 15px;
+}
+.main_content span.oi.oi-media-play{
+  margin-left: 2px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.main_content span.oi.oi-media-stop {
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+div.progress {
+  position: absolute;
+  color: black;
+  font-weight: 100;
+  line-height: 2;
+  top: 50%;
+  bottom: auto;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  font-size: 30px;
+  z-index: 99;
+  background-color: transparent;
+}
+
+div.progress-wrapper {
+  position: relative;
+}
