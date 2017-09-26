@@ -6,10 +6,10 @@
   
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Pacifico|roboto'>
-
-      <link rel="stylesheet" href="css/style.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Pacifico|roboto'>
+  <link rel='stylesheet prefetch' href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+  <link rel="stylesheet" href="css/style.css">
 
   
 </head>
@@ -28,8 +28,8 @@
              round-progress
              max = "myFixedTimer"
              current = "myTimer"
-             color = "#4caf50"
-             bgcolor = "#a5d6a7"
+             color = "{{color}}"
+             bgcolor = "{{bgcolor}}"
              radius = "120"
              rounded = "true"
              stroke = "20"
@@ -51,10 +51,27 @@
     
     
     <br />
-    <button class = "btn btn-success" ng-click="start()"><span class="oi oi-media-play"></span></button>
-    <button class = "btn btn-danger" ng-click="reset()"><span class="oi oi-media-stop"></span></button>
+    <button class = "btn btn-success" ng-click="start()"><i class="fa fa-play" aria-hidden="true"></i></button>
+    <button class = "btn btn-danger" ng-click="reset()"><i class="fa fa-stop" aria-hidden="true"></i></button>
     <br />
-    {{breakTime}}
+    
+    <div class = "container setting">
+      <div class ="row" >
+        <div class = "col-sm breakL">
+            <p>Break Length</p>
+            <p> <i class="fa fa-minus" aria-hidden="true" ng-click = 
+            "breakTime = breakTime > 1 ? breakTime - 1 : 1"></i> <span class = "timeLength">{{breakTime}}</span> <i class="fa fa-plus" aria-hidden="true" ng-click = 
+            "breakTime = breakTime + 1"></i></p>
+        </div>
+        <div class = "col-sm workL">
+          <p>Work Length</p>
+          <p> <i class="fa fa-minus" aria-hidden="true" ng-click = 
+            "workTime = workTime > 1 ? workTime - 1 : 1"></i> <span class = "timeLength">{{workTime}}</span> <i class="fa fa-plus" aria-hidden="true" ng-click = 
+            "workTime = workTime + 1"></i></p>
+        </div>
+      </div>
+    </div>
+  
   </div> <!-- Main content -->
 </div> <!-- Container fluid -->
   

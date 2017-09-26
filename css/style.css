@@ -22,15 +22,29 @@
   width: 15px;
   height: 15px;
 }
-.main_content span.oi.oi-media-play{
-  margin-left: 2px;
-  margin-top: 2px;
+
+.fa.fa-play,.fa.fa-stop{
+  margin-top: 6px;
   cursor: pointer;
 }
-.main_content span.oi.oi-media-stop {
-  margin-top: 2px;
-  cursor: pointer;
+
+
+i {
+    margin:0 10px 0 10px;
+    font-size: 12px;
+    height: 30px; 
+    display:table-cell;
+    vertical-align:middle;
+    cursor: pointer;
+    user-select: none;
 }
+
+span.timeLength{
+  font-size: 26px;
+ 
+}
+
+
 
 div.progress {
   position: absolute;
@@ -50,4 +64,15 @@ div.progress {
 
 div.progress-wrapper {
   position: relative;
+}
+
+.container.setting{
+    /*margin:10px;*/
+    padding:40px;
+
+}
+
+.breakL,.workL{
+  margin:10px;
+  padding:5px;
 }
